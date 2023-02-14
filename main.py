@@ -138,7 +138,8 @@ def send_message(to_user, access_token, city_name, weather, max_temperature, min
         "topcolor": "#FF0000",
         "data": {
             "date": {
-                "value": "{} {}".format(today, week)
+                "value": "{} {}".format(today, week),
+                "color": get_color()
             },
             "city": {
                 "value": city_name
@@ -160,8 +161,7 @@ def send_message(to_user, access_token, city_name, weather, max_temperature, min
                 "color": get_color()
             },
             "note_ch": {
-                "value": note_ch,
-                "color": get_color()
+                "value": note_ch
             }
         }
     }
